@@ -22,6 +22,7 @@ package {
         'vim',
         'htop',
         'php5-cli',
+        'php5-gd',
         'git',
         'cifs-utils',
         'curl',
