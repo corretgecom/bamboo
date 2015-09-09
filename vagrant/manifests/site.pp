@@ -11,7 +11,9 @@ file { "/home/vagrant/bamboo":
 }
 
 class {'apt':
-    always_apt_update => true
+  update => {
+    frequency => 'daily',
+  },
 }
 
 package {
