@@ -71,7 +71,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   #   vb.gui = true
   #
     # Use VBoxManage to customize the VM. For example to change memory:
-    vb.name = "bamboo"
+    vb.name = "corretgecom_bamboo"
     vb.cpus = 4
     vb.memory = 1024
     # See http://askubuntu.com/questions/238040/how-do-i-fix-name-service-for-vagrant-client
