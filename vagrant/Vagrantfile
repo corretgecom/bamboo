@@ -11,6 +11,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   # Every Vagrant virtual environment requires a box to build off of.
   config.vm.box = "ubuntu/trusty64"
+  config.vm.box_url = "https://cloud-images.ubuntu.com/vagrant/trusty/current/trusty-server-cloudimg-amd64-vagrant-disk1.box"
 
   # hostname.
   # need to fix Could not retrieve fact fqdn
@@ -72,7 +73,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   #
     # Use VBoxManage to customize the VM. For example to change memory:
     vb.name = "corretgecom_bamboo"
-    vb.cpus = 4
+    vb.cpus = 2
     vb.memory = 1024
     # See http://askubuntu.com/questions/238040/how-do-i-fix-name-service-for-vagrant-client
     vb.customize ["modifyvm", :id, "--natdnshostresolver1", "on"]
